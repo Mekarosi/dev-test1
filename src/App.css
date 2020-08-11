@@ -1,1 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  margin: 0;
+}
+
+.deleteB {
+  background-color: rgb(252, 244, 230);
+  width: 90px;
+  border: white;
+  color: rgb(251, 207, 107);
+  border-radius: 10%;
+}
+
+.topBar {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  border: gray;
+}
+
+.NewButton {
+  width: 120px;
+  height: 40px;
+  background-color: rgb(47, 65, 126);
+  color: white;
+  padding-left: 20px;
+  padding-top: 7px;
+  border-radius: 8%;
+}
+
+.badge {
+  background-color: #fbf3e6;
+  color: yellow;
+  width: 50px;
+  margin-left: 10px;
+}
+
+.gigButtonA {
+  float: left;
+  border: rgb(252, 252, 255);
+  background-color: rgb(252, 252, 255);
+  color: rgb(210, 208, 215);
+}
+
+.gigButtonB {
+  margin-left: 200px;
+  border: rgb(252, 252, 255);
+  background-color: rgb(252, 252, 255);
+  color: rgb(210, 208, 215);
+  align-items: center;
+}
+
+.gigButtonC {
+  float: right;
+  margin-right: 120px;
+  border: rgb(252, 252, 255);
+  background-color: rgb(252, 252, 255);
+  color: rgb(210, 208, 215);
+}
+
+.gigNav {
+  background-color: rgb(252, 252, 255);
+  margin-top: 50px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(240, 240, 242);
+  margin-bottom: 25px;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: rgb(251, 251, 255);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-right: solid 1px rgb(245, 238, 238);
+}
+
+.secondbox {
+  height: 500px;
+  width: 500px;
+  background-color: white;
+  box-shadow: ivory;
+  border-radius: 2%;
+  padding: 45px;
+}
+
+.midButton {
+  border: 1px solid gainsboro;
+  margin-right: 50px;
+  color: rgb(210, 208, 215);
+  width: 150px;
+  font-size: 12px;
+  padding-left: 50px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  border-radius: 8%;
+}
+
+.midBadge {
+  width: 150px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-top: 4px;
+  border: 1px solid gainsboro;
+  background-color: rgb(252, 252, 255);
+  color: rgb(210, 208, 215);
+  border-radius: 8%;
+  box-shadow: gainsboro;
+  font-size: 12px;
+}
+
+.midBadgeC {
+  width: 150px;
+  margin-right: 50px;
+  padding-left: 30px;
+  padding-top: 4px;
+  border: 1px solid gainsboro;
+  background-color: rgb(252, 252, 255);
+  color: rgb(210, 208, 215);
+  border-radius: 8%;
+  box-shadow: gainsboro;
+  font-size: 12px;
+}
+.secondboxB {
+  height: 200px;
+  width: 500px;
+  background-color: white;
+  box-shadow: ivory;
+  border-radius: 5%;
+  padding: 45px;
+}
+
+.icon {
+  margin: 30px;
+  color: rgb(223, 213, 212);
+}
+h6 {
+  margin-bottom: 20px;
+  color: rgb(85, 80, 100);
+}
+
+.tags {
+  color: rgb(166, 169, 181);
+  margin-left: 9px;
+  text-decoration: underline;
+}
+
+p {
+  color: rgb(85, 80, 100);
+}
+
+.mr-4 {
+  height: 150px;
+  width: 200px;
+  background-color: white;
+  box-shadow: 2px white;
+  border-radius: 5%;
+  padding: 45px;
+
+  margin-left: 10px;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  color: rbg(85, 80, 100);
+}
+
+.cancel {
+  text-decoration: none;
+  color: rgb(47, 65, 126);
+  margin-top: 30px;
+}
+
+/* a:hover {
+  background-color: rgb(251, 179, 11);
+} */
+
+.px-3 {
+  color: rgb(169, 176, 197);
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+  background-color: rgb(251, 251, 255);
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
