@@ -16,7 +16,7 @@ const TopBar = () => {
         className='navbar navbar-light'
         style={{
           borderBottom: '1px solid gainsboro',
-          width: '100%',
+          // width: '100%',
           paddingBottom: '40px',
         }}
       >

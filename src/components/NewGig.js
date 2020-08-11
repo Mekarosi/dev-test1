@@ -9,6 +9,35 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faCircleNotch);
 
 class NewGig extends Component {
+  constructor() {
+    super();
+    this.state = {
+      myColorOne: 'rgb(85,80,100)',
+      myColorTwo: 'rgb(85,80,100)',
+    };
+  }
+
+  handleClick = () => {
+    this.setState({
+      myColorOne: 'rgb(251,179,11)',
+    });
+    setTimeout(() => {
+      this.setState({
+        myColorOne: 'rgb(85,80,100)',
+      });
+    }, 1000);
+  };
+
+  myClick = () => {
+    this.setState({
+      myColorTwo: 'rgb(251,179,11)',
+    });
+    setTimeout(() => {
+      this.setState({
+        myColorTwo: 'rgb(85,80,100)',
+      });
+    }, 1000);
+  };
   render() {
     return (
       <div className='content'>
@@ -25,9 +54,14 @@ class NewGig extends Component {
 
         <div className='box d-flex'>
           <div className='mr-4 pr-4'>
-            <p onClick={this.handleClick}>Basic data</p>
+            <p
+              onClick={this.handleClick}
+              style={{ color: this.state.myColorOne }}
+            >
+              Basic data
+            </p>
 
-            <p onClick={this.handleClick}>
+            <p onClick={this.myClick} style={{ color: this.state.myColorTwo }}>
               <FontAwesomeIcon
                 icon={faCircleNotch}
                 style={{ fontSize: '8px', marginRight: '10px' }}
@@ -68,12 +102,31 @@ class NewGig extends Component {
               <Form.Group controlId='formGridAddress1'>
                 <Form.Control placeholder='Address' />
               </Form.Group>
-              <Form.Row>
-                <Form.Group as={Col} controlId='formGridState'>
-                  <Form.Label>Add tags</Form.Label>
-                  <Form.Control type='text' placeholder='Add more tags' />
-                </Form.Group>
-              </Form.Row>
+
+              <div
+                className='d-flex'
+                style={{
+                  width: '408px',
+                  height: '40px',
+                  borderRadius: '4%',
+                  paddingTop: '4px',
+                  marginBottom: '10px',
+                  border: '1px solid rgb(206,212,218)',
+                }}
+              >
+                <span
+                  className='badge'
+                  style={{
+                    width: '90px',
+                    height: '30px',
+                    paddingTop: '12px',
+                    marginRight: '20px',
+                  }}
+                >
+                  Remote {''}x
+                </span>
+                <p>Add more tags</p>
+              </div>
 
               <p>
                 Suggested tags:{' '}
@@ -85,7 +138,7 @@ class NewGig extends Component {
                   Contract
                 </a>
                 <a href='#' className='tags'>
-                  freelance'
+                  freelance
                 </a>
               </p>
 

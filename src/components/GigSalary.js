@@ -5,6 +5,10 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 
 class GigSalary extends Component {
+  constructor() {
+    super();
+    this.state = {};
+  }
   render() {
     return (
       <div className='content'>

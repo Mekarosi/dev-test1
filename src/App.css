@@ -12,13 +12,14 @@ body {
   background-color: rgb(252, 244, 230);
   width: 90px;
   border: white;
-  color: rgb(251, 207, 107);
+  color: rgb(251, 179, 11);
   border-radius: 10%;
 }
 
 .topBar {
   margin-top: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  width: 100%;
   border: gray;
 }
 
@@ -34,7 +35,7 @@ body {
 
 .badge {
   background-color: #fbf3e6;
-  color: yellow;
+  color: rgb(251, 179, 11);
   width: 50px;
   margin-left: 10px;
 }
