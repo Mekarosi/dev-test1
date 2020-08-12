@@ -38,7 +38,7 @@ const TopBar = () => {
           <span>{<FontAwesomeIcon className='icon' icon={faEnvelope} />}</span>
           <span>{<FontAwesomeIcon className='icon' icon={faCog} />}</span>
           <span>
-            <img alt='lady' src={require('./images/youngwoman.jpg')} />
+            <img alt='lady' />
           </span>
         </div>
       </div>
