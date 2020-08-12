@@ -48,11 +48,11 @@ body {
 }
 
 .gigButtonB {
-  margin-left: 200px;
+  margin-left: 400px;
   border: rgb(252, 252, 255);
   background-color: rgb(252, 252, 255);
   color: rgb(210, 208, 215);
-  align-items: center;
+  text-align: center;
 }
 
 .gigButtonC {
@@ -183,10 +183,6 @@ p {
   color: rgb(47, 65, 126);
   margin-top: 30px;
 }
-
-/* a:hover {
-  background-color: rgb(251, 179, 11);
-} */
 
 .px-3 {
   color: rgb(169, 176, 197);

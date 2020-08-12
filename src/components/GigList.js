@@ -1,8 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
-import SideBar from './SideBar';
 import TopBar from './TopBar';
 
 const GigList = () => {
@@ -51,7 +48,10 @@ const GigList = () => {
 
       <div className='.container-fluid'>
         <div className='row'>
-          <div style={{ marginBottom: '30px', display: 'inline-flex' }}>
+          <div
+            className='col-sm'
+            style={{ marginBottom: '30px', display: 'inline-flex' }}
+          >
             <div className='midButton'>
               <span>Freelance</span>
             </div>
@@ -71,7 +71,8 @@ const GigList = () => {
             >
               Keyword
             </span>
-
+          </div>
+          <div className='col-sm'>
             <span
               className='btn dropdown-toggle'
               style={{
@@ -89,6 +90,8 @@ const GigList = () => {
             </span>
 
             <span className='midBadgeC'>Remote friendly</span>
+          </div>
+          <div className>
             <span className='midBadge'>Design</span>
             <span className='midBadge'>Contact</span>
           </div>

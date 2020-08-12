@@ -80,7 +80,10 @@ class SideBar extends Component {
           style={{ color: this.state.yourColorA }}
         >
           {' '}
-          <FontAwesomeIcon icon={['fas', 'id-card-alt']} />
+          <FontAwesomeIcon
+            icon={['fas', 'id-card-alt']}
+            // style={{ color: 'rgb(169,176,197)' }}
+          />
           <span className='px-3'>Dashboard</span>
         </a>
 
@@ -93,21 +96,21 @@ class SideBar extends Component {
           <span className='px-3'>Gigs</span>
         </a>
 
-        <a href='#'>
-          <FontAwesomeIcon
-            icon={faHome}
-            onClick={this.whenClick}
-            style={{ color: this.state.yourColorC }}
-          />
+        <a
+          href='#'
+          onClick={this.whenClick}
+          style={{ color: this.state.yourColorC }}
+        >
+          <FontAwesomeIcon icon={faHome} />
           <span className='px-3'>Company</span>
         </a>
 
-        <a href='#'>
-          <FontAwesomeIcon
-            icon={faUser}
-            onClick={this.ifClick}
-            style={{ color: this.state.yourColorD }}
-          />
+        <a
+          href='#'
+          onClick={this.ifClick}
+          style={{ color: this.state.yourColorD }}
+        >
+          <FontAwesomeIcon icon={faUser} />
           <span className='px-3'>Account</span>
         </a>
       </div>
