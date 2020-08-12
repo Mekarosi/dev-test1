@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar';
+import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
@@ -49,14 +50,18 @@ class GigSalary extends Component {
                     backgroundColor: 'rgb(47,65,126)',
                   }}
                 >
-                  <a
+                  {/* <a
                     style={{
                       color: 'white',
                     }}
                     href='/'
                   >
                     Add gig
-                  </a>
+                  </a> */}
+                  <Link to='/' style={{ color: 'white' }}>
+                    {' '}
+                    Add gig
+                  </Link>
                 </Button>
               </div>
             </Form>

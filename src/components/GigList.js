@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from './TopBar';
 
@@ -25,7 +26,8 @@ const GigList = () => {
             color: 'white',
           }}
         >
-          <a href='/new'>New gig {''} +</a>
+          <Link to='/new'>New gig {''} +</Link>
+          {/* <a href='/new'>New gig {''} +</a> */}
         </span>
       </div>
 

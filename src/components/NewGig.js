@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopBar from './TopBar';
 import Form from 'react-bootstrap/Form';
+import { Link } from 'react-router-dom';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import { library } from '@fortawesome/fontawesome-svg-core';
@@ -160,9 +161,10 @@ class NewGig extends Component {
                     backgroundColor: 'rgb(47,65,126)',
                   }}
                 >
-                  <a href='/salary' style={{ color: 'white' }}>
+                  <Link to='/salary' style={{ color: 'white' }}>
+                    {' '}
                     Continue
-                  </a>
+                  </Link>
                 </Button>
               </div>
             </Form>
