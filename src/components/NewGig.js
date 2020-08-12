@@ -130,14 +130,12 @@ class NewGig extends Component {
               </div>
 
               <div>
-                <div className='d-flex'>
-                  <p>
-                    Suggested tags: <div className='tags'>full time</div>
-                    {''}
-                    <div className='tags'>Contract</div>
-                    <div className='tags'>freelance</div>
-                  </p>
-                </div>
+                <p>
+                  Suggested tags: <div className='tags'>full time</div>
+                  {''}
+                  <div className='tags'>Contract</div>
+                  <div className='tags'>freelance</div>
+                </p>
 
                 <div
                   className='d-flex'
