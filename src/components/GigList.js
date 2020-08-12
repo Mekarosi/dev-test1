@@ -96,9 +96,9 @@ const GigList = () => {
 
       <div className='table-header'>
         <span style={{ marginLeft: '120px' }}>Role</span>
-        <span style={{ marginLeft: '210px' }}>Company</span>
-        <span style={{ marginLeft: '150px' }}>Date</span>
-        <span style={{ marginLeft: '220px' }}>Salary($)</span>
+        <span style={{ marginLeft: '110px' }}>Company</span>
+        <span style={{ marginLeft: '110px' }}>Date</span>
+        <span style={{ marginLeft: '160px' }}>Salary($)</span>
       </div>
 
       <TableRow />
