@@ -21,7 +21,7 @@ const TableRow = () => {
         <span style={{ marginRight: '60px', marginLeft: '85px' }}>
           20,000-30,000
         </span>
-        <span style={{ marginRight: '60px', marginLeft: '87px' }}>
+        <span style={{ marginRight: '60px', marginLeft: '10px' }}>
           <button className='deleteB'>Delete</button>
         </span>
       </div>
