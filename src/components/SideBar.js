@@ -64,7 +64,14 @@ class SideBar extends Component {
   render() {
     return (
       <div className='sidebar'>
-        <a className='active' href='#'>
+        <div
+          className='active'
+          style={{
+            marginTop: '30px',
+            marginLeft: '30px',
+            marginBottom: '30px',
+          }}
+        >
           <FontAwesomeIcon icon={faUniversity} />
           <strong
             className='px-1'
@@ -72,10 +79,10 @@ class SideBar extends Component {
           >
             test
           </strong>
-        </a>
+        </div>
 
-        <a
-          href='#'
+        <div
+          className='side-icon'
           onClick={this.handleClick}
           style={{ color: this.state.yourColorA }}
         >
@@ -85,34 +92,34 @@ class SideBar extends Component {
             // style={{ color: 'rgb(169,176,197)' }}
           />
           <span className='px-3'>Dashboard</span>
-        </a>
+        </div>
 
-        <a
-          href='#'
+        <div
+          className='side-icon'
           onClick={this.myClick}
           style={{ color: this.state.yourColorB }}
         >
           <FontAwesomeIcon icon={faSuitcase} />
           <span className='px-3'>Gigs</span>
-        </a>
+        </div>
 
-        <a
-          href='#'
+        <div
+          className='side-icon'
           onClick={this.whenClick}
           style={{ color: this.state.yourColorC }}
         >
           <FontAwesomeIcon icon={faHome} />
           <span className='px-3'>Company</span>
-        </a>
+        </div>
 
-        <a
-          href='#'
+        <div
+          className='side-icon'
           onClick={this.ifClick}
           style={{ color: this.state.yourColorD }}
         >
           <FontAwesomeIcon icon={faUser} />
           <span className='px-3'>Account</span>
-        </a>
+        </div>
       </div>
     );
   }

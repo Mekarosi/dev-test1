@@ -159,8 +159,11 @@ body {
 
 .table-header {
   margin-bottom: 20px;
-  color: rgb(169, 176, 197);
+  color: #a9b0c5;
+  font-size: 15px;
+  font-weight: bold;
 }
+
 .table-setting {
   width: 97%;
   height: 60px;
@@ -184,12 +187,16 @@ h6 {
 .tags {
   color: rgb(166, 169, 181);
   margin-left: 9px;
+  display: inline;
   text-decoration: underline;
 }
 
 p {
   color: rgb(85, 80, 100);
 }
+/* .new-tags {
+  display: inline-block;
+} */
 
 .mr-4 {
   height: 150px;
@@ -202,11 +209,12 @@ p {
   margin-left: 10px;
 }
 
-.sidebar a {
+.side-icon {
   display: block;
   color: black;
   padding: 16px;
   text-decoration: none;
+  margin-left: 20px;
 }
 
 .sidebar a.active {

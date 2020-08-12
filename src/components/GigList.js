@@ -32,17 +32,15 @@ const GigList = () => {
       </div>
 
       <div className='gigNav'>
-        <div className='gigButtonA'>
+        <div>
           All gigs
           <span className='badge'>3408</span>
         </div>
-        <div className='gigButtonB'>
+        <div style={{ marginLeft: '400px' }}>
           my gigs
-          <span className='badge' style={{ alignText: 'center' }}>
-            1200
-          </span>
+          <span className='badge'>1200</span>
         </div>
-        <div className='gigButtonC'>
+        <div style={{ marginLeft: '400px' }}>
           Rejected gigs
           <span className='badge'>100</span>
         </div>

@@ -129,22 +129,26 @@ class NewGig extends Component {
                 <p>Add more tags</p>
               </div>
 
-              <p>
-                Suggested tags: <a className='tags'>full time</a>
-                {''}
-                <a className='tags'>Contract</a>
-                <a className='tags'>freelance</a>
-              </p>
+              <div>
+                <div className='d-flex'>
+                  <p>
+                    Suggested tags: <div className='tags'>full time</div>
+                    {''}
+                    <div className='tags'>Contract</div>
+                    <div className='tags'>freelance</div>
+                  </p>
+                </div>
 
-              <div
-                className='d-flex'
-                style={{ marginTop: '20px', float: 'right' }}
-              >
-                <p>
-                  <a href='/' className='cancel'>
-                    Cancel
-                  </a>
-                </p>
+                <div
+                  className='d-flex'
+                  style={{ marginTop: '20px', float: 'right' }}
+                >
+                  <p>
+                    <a href='/' className='cancel'>
+                      Cancel
+                    </a>
+                  </p>
+                </div>
                 <Button
                   variant='primary'
                   type='submit'
