@@ -44,14 +44,14 @@ body {
   float: left;
   border: rgb(252, 252, 255);
   background-color: rgb(252, 252, 255);
-  color: rgb(210, 208, 215);
+  color: rgb(169, 176, 197);
 }
 
 .gigButtonB {
   margin-left: 400px;
   border: rgb(252, 252, 255);
   background-color: rgb(252, 252, 255);
-  color: rgb(210, 208, 215);
+  color: rgb(169, 176, 197);
   text-align: center;
 }
 
@@ -60,15 +60,16 @@ body {
   margin-right: 120px;
   border: rgb(252, 252, 255);
   background-color: rgb(252, 252, 255);
-  color: rgb(210, 208, 215);
+  color: rgb(169, 176, 197);
 }
 
 .gigNav {
+  display: inline-flex;
   background-color: rgb(252, 252, 255);
   margin-top: 50px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgb(240, 240, 242);
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .sidebar {
@@ -93,8 +94,9 @@ body {
 
 .midButton {
   border: 1px solid gainsboro;
-  margin-right: 50px;
-  color: rgb(210, 208, 215);
+  margin-right: 40px;
+  margin-left: 25px;
+  color: rgb(169, 176, 197);
   width: 150px;
   font-size: 12px;
   padding-left: 50px;
@@ -103,14 +105,31 @@ body {
   border-radius: 8%;
 }
 
-.midBadge {
+.midBadgeD {
   width: 150px;
+  height: 27px;
+  margin-left: -70px;
   margin-right: 50px;
   padding-left: 50px;
   padding-top: 4px;
   border: 1px solid gainsboro;
   background-color: rgb(252, 252, 255);
-  color: rgb(210, 208, 215);
+  color: rgb(169, 176, 197);
+  border-radius: 8%;
+  box-shadow: gainsboro;
+  font-size: 12px;
+}
+
+.midBadgeE {
+  width: 150px;
+  height: 27px;
+  margin-left: -10px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-top: 4px;
+  border: 1px solid gainsboro;
+  background-color: rgb(252, 252, 255);
+  color: rgb(169, 176, 197);
   border-radius: 8%;
   box-shadow: gainsboro;
   font-size: 12px;
@@ -118,12 +137,13 @@ body {
 
 .midBadgeC {
   width: 150px;
-  margin-right: 50px;
+  height: 27px;
+  margin-right: 120px;
   padding-left: 30px;
   padding-top: 4px;
   border: 1px solid gainsboro;
   background-color: rgb(252, 252, 255);
-  color: rgb(210, 208, 215);
+  color: rgb(169, 176, 197);
   border-radius: 8%;
   box-shadow: gainsboro;
   font-size: 12px;
@@ -135,6 +155,21 @@ body {
   box-shadow: ivory;
   border-radius: 5%;
   padding: 45px;
+}
+
+.table-header {
+  margin-bottom: 20px;
+  color: rgb(169, 176, 197);
+}
+.table-setting {
+  width: 97%;
+  height: 60px;
+  background-color: white;
+  border: 0.5px solid transparent;
+  padding-top: 18px;
+  border-radius: 6%;
+  box-shadow: 1px 1px whitesmoke;
+  margin-bottom: 10px;
 }
 
 .icon {

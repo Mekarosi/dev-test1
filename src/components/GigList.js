@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import TopBar from './TopBar';
+import TableRow from './TableRow';
 
 const GigList = () => {
   return (
@@ -26,34 +27,30 @@ const GigList = () => {
             color: 'white',
           }}
         >
-          <Link to='/new'>New gig {''} +</Link>
-          {/* <a href='/new'>New gig {''} +</a> */}
+          <Link to='/new'>New gig {''} + </Link>
         </span>
       </div>
 
       <div className='gigNav'>
-        <a href='#' className='gigButtonA'>
+        <div className='gigButtonA'>
           All gigs
           <span className='badge'>3408</span>
-        </a>
-        <a href='#' className='gigButtonB'>
+        </div>
+        <div className='gigButtonB'>
           my gigs
           <span className='badge' style={{ alignText: 'center' }}>
             1200
           </span>
-        </a>
-        <a href='#' className='gigButtonC'>
+        </div>
+        <div className='gigButtonC'>
           Rejected gigs
           <span className='badge'>100</span>
-        </a>
+        </div>
       </div>
 
       <div className='.container-fluid'>
         <div className='row'>
-          <div
-            className='col-sm'
-            style={{ marginBottom: '30px', display: 'inline-flex' }}
-          >
+          <div style={{ marginBottom: '30px', display: 'inline-flex' }}>
             <div className='midButton'>
               <span>Freelance</span>
             </div>
@@ -63,7 +60,7 @@ const GigList = () => {
               style={{
                 border: '1px solid gainsboro',
                 marginRight: '50px',
-                color: 'rgb(210, 208, 215)',
+                color: 'rgb(169,176,197)',
                 fontSize: '12px',
                 padding: '2px',
                 width: '150px',
@@ -74,110 +71,45 @@ const GigList = () => {
               Keyword
             </span>
           </div>
-          <div className='col-sm'>
-            <span
-              className='btn dropdown-toggle'
-              style={{
-                border: '1px solid gainsboro',
-                marginRight: '50px',
-                color: 'rgb(210, 208, 215)',
-                fontSize: '12px',
-                padding: '2px',
-                width: '150px',
-              }}
-              type='button'
-              data-toggle='dropdown'
-            >
-              Location
-            </span>
 
-            <span className='midBadgeC'>Remote friendly</span>
-          </div>
-          <div className>
-            <span className='midBadge'>Design</span>
-            <span className='midBadge'>Contact</span>
-          </div>
+          <span
+            className='btn dropdown-toggle'
+            style={{
+              border: '1px solid gainsboro',
+              marginRight: '50px',
+              color: 'rgb(169,176,197)',
+              fontSize: '12px',
+              padding: '2px',
+              width: '150px',
+              height: '25px',
+            }}
+            type='button'
+            data-toggle='dropdown'
+          >
+            Location
+          </span>
+
+          <span className='midBadgeC'>Remote friendly</span>
+
+          <span className='midBadgeD'>Design</span>
+          <span className='midBadgeE'>Contact</span>
         </div>
       </div>
 
-      <table className='table'>
-        <thead>
-          <tr>
-            <th scope='col'></th>
-            <th scope='col'>Role</th>
-            <th scope='col'>Company</th>
-            <th scope='col'>Date</th>
-            <th scope='col'>Salary</th>
-            <th scope='col'></th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <input type='checkbox' className='check' />
-            </td>
-            <td>Product Designer</td>
-            <td>TM30</td>
-            <td>20th June 2020</td>
-            <td>20,000-30,000</td>
-            <td>
-              <button className='deleteB'>Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type='checkbox' className='check' />
-            </td>
-            <td>Product Designer</td>
-            <td>TM30</td>
-            <td>20th June 2020</td>
-            <td>20,000-30,000</td>
-            <td>
-              <button className='deleteB'>Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type='checkbox' className='check' />
-            </td>
-            <td>Product Designer</td>
-            <td>TM30</td>
-            <td>20th June 2020</td>
-            <td>20,000-30,000</td>
-            <td>
-              <button className='deleteB'>Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type='checkbox' className='check' />
-            </td>
-            <td>Product Designer</td>
-            <td>TM30</td>
-            <td>20th June 2020</td>
-            <td>20,000-30,000</td>
-            <td>
-              <button className='deleteB'>Delete</button>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <input type='checkbox' className='check' />
-            </td>
-            <td>Product Designer</td>
-            <td>TM30</td>
-            <td>20th June 2020</td>
-            <td>20,000-30,000</td>
-            <td>
-              <button className='deleteB'>Delete</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <div className='table-header'>
+        <span style={{ marginLeft: '120px' }}>Role</span>
+        <span style={{ marginLeft: '210px' }}>Company</span>
+        <span style={{ marginLeft: '150px' }}>Date</span>
+        <span style={{ marginLeft: '220px' }}>Salary($)</span>
+      </div>
+
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
+      <TableRow />
     </div>
-    //   </div>
-    // </div>
   );
 };
-
 export default GigList;

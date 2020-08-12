@@ -50,14 +50,6 @@ class GigSalary extends Component {
                     backgroundColor: 'rgb(47,65,126)',
                   }}
                 >
-                  {/* <a
-                    style={{
-                      color: 'white',
-                    }}
-                    href='/'
-                  >
-                    Add gig
-                  </a> */}
                   <Link to='/' style={{ color: 'white' }}>
                     {' '}
                     Add gig
